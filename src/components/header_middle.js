@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Quienes somos', href: 'aboutus' },
@@ -9,14 +10,14 @@ const navigation = [
 export default function Header() {
   return (
     <header className="bg-blue-800">
-      <nav className=" mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div className="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
-          <div className="flex items-center">
+      <nav className="px-4 sm:px-6 lg:px-8 mx-auto" aria-label="Top">
+          <div className="flex w-full flex-col lg:flex-row mx-auto py-3 items-center border-b border-indigo-500 lg:border-none">
             <Link href="/">
-              <span className="sr-only">Workflow</span>
-              <img
-                className="h-10 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white"
+              <Image
+                className=""
+                height={60}
+                width={60}
+                src="/lis_flower.png"
                 alt=""
               />
             </Link>
@@ -26,7 +27,6 @@ export default function Header() {
                   {link.name}
                 </Link>
               ))}
-            </div>
           </div>
         </div>
         <div className="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
