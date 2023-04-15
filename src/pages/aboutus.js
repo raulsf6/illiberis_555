@@ -4,7 +4,7 @@ import { members } from "@/data/members";
 
 var quote = "Las creencias son actos de fe, la vida se hace con hechos";
 var author = "Isaac Bhenaggay";
-var position = "Coordinador";
+var position = "Scouter de tropa";
 
 export default function AboutUs({ members }) {
   return (
