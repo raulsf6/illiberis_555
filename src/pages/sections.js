@@ -13,12 +13,13 @@ export default function Sections({ sections }) {
             Nuestro grupo scout está formado de las siguientes secciones
           </p>
         </div>
-        <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+        <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
           {sections.map((section, index) => (
             <GroupSection
               key={index}
               name={section.name}
               description={section.description}
+              color={section.color}
             />
           ))}
         </div>

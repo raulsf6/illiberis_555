@@ -10,7 +10,7 @@ export default function GroupSection(props) {
       </div>
       <div class="flex-1 bg-white p-6 flex flex-col justify-between">
         <div class="flex-1">
-          <p class="text-xl text-center font-bold text-yellow-400">
+          <p class={`text-xl text-center font-bold ${props.color}`}>
             {props.name}
           </p>
           <a href="#" class="block mt-2">
