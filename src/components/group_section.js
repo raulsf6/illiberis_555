@@ -13,7 +13,7 @@ export default function GroupSection(props) {
           <p class={`text-xl text-center font-bold ${props.color}`}>
             {props.name}
           </p>
-          <a href="#" class="block mt-2">
+          <a href="#" class="block mt-2 text-justify">
             <p class="mt-3 text-base text-gray-500">{props.description}</p>
           </a>
         </div>
