@@ -1,5 +1,4 @@
 export default function Person(props) {
-    console.log("image value is: " + props.image)
   return (
     <div class="space-y-4">
       <img
